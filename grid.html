@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="RegistrationStyle.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Hello, world!</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container" style="padding: 10px">
+      <table style="text-align:center" class="table table-success" id="myTable">
+        <thead>
+          <tr>
+            <button
+              class=" add btn btn-success"
+              <!-- "document.location='index.html'" -->
+
+              Add new record <span class="glyphicon glyphicon-plus"></span>
+            </button>
+            <p style="float: right;">
+            <button
+              class=" add btn btn-warning" onclick="document.location='index.html'" style="padding-right: 10px">
+              Registration 
+            </button>
+          </p>
+          <!-- <i style="font-size:15px;color:	#B2BEB5" class="fa">&#xf0d8;</i> <i style="font-size:15px;color:	#B2BEB5" class="fa">&#xf0d7;</i> -->
+          </tr>
+          <tr class="search"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for record.." title="Type in a name"></tr>
+          <tr class="headRow">
+            <th scope="col" id="userId"class="head"style="text-align:center">User Id <i class="uhead fa fa-chevron-circle-up"></i> <i class="dhead fa fa-chevron-circle-down"></i> </th>
+            <th scope="col" id="nameId" class="head"style="text-align:center">Name <i class="uhead fa fa-chevron-circle-up"></i> <i class="dhead fa fa-chevron-circle-down"></i> </th>
+            <th scope="col" id="emailId" class="head"style="text-align:center">Email <i class="uhead fa fa-chevron-circle-up"></i> <i class="dhead fa fa-chevron-circle-down"></i></th>
+            <th scope="col" id="ctyId" class="head"style="text-align:center">Country <i class="uhead fa fa-chevron-circle-up"></i> <i class="dhead fa fa-chevron-circle-down"></i> </th>
+            <th scope="col" id="genId" class="head"style="text-align:center">Gender <i class="uhead fa fa-chevron-circle-up"></i> <i class="dhead fa fa-chevron-circle-down"></i> </th>
+            <th scope="col" id="lanId" style="text-align:center" > Language</th>
+            <th scope="col"style="text-align:center">Update</th>
+          </tr>
+        </thead>
+        <tbody class="body">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td> -->
+          <!-- </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="databaseScript.js"></script>
+  </body>
+</html>
